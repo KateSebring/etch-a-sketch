@@ -1,12 +1,16 @@
+html, body {
+    min-height: 100vh;
+}
+
 .sketch-container {
-    width: 800px;
-    height: 800px;
+    width: 960px;
+    height: 960px;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid black;
+    align-content: flex-start;
 }
 
 .grid-square {
-    background-color: aquamarine;
-    width: 50px;
-    height: 50px;
+    background-color: white;
 }
