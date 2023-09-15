@@ -1,0 +1,11 @@
+.sketch-container {
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+}
+
+.grid-square {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+}
