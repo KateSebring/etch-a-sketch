@@ -1,7 +1,19 @@
 const sketchContainer = document.querySelector('.sketch-container');
 
-const squareDiv = document.createElement('div');
+function createGrid() {
+    const squareDiv = document.createElement('div');
+    squareDiv.setAttribute('class', 'grid-square');
+    sketchContainer.appendChild(squareDiv);
+}
 
-squareDiv.setAttribute('class', 'grid-square');
+for (let i = 0; i < 256; i++) {
+    createGrid();
+}
 
-sketchContainer.appendChild(squareDiv);
+const squareDiv = document.getElementsByClassName('grid-square');
+
+for (let j = 0; j < squareDiv.length; j++) {
+    squareDiv[j].addEventListener("mouseover", () => {
+        squareDiv[j].style.backgroundColor = "black";
+    })
+}
